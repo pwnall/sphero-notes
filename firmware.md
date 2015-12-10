@@ -16,7 +16,7 @@ http://update.orbotix.com/unstable/current/codes/2k/SpheroM4Mix-3.59.bin
 
 ## Bootloader update protocol
 
-This is based on the decompiled Android Sphero app.
+This is based on the decompiled Android Sphero app. The API docs reference a ``Bootloader Protocol Specification'' that doesn't seem to be publicly available.
 
 The bootloader has device ID 1.
 
@@ -32,6 +32,12 @@ The parameters are hard-coded in the app, so they can't seem to change between m
 |  3 |  54 |  6 | 2048 | 110592 |
 | 10 | 116 |  8 | 2048 | 237568 |
 | 30 | 116 |  8 | 2048 | 237568 |
+
+### Jump to Bootloader
+
+Jumping is done by sending a message with Device ID 0 (core), Command ID 30h.
+
+Jumping to the bootloader always succeeds.
 
 ### BEGIN_REFLASH
 
