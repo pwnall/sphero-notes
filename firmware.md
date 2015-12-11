@@ -1,18 +1,25 @@
 ## Download URLs from Sphero
 
-Master ping URL:  http://update.orbotix.com/sphero/current/versions.php?mac=6886E7061234&mainApp=3.73&overlayManager=0.6&bootloader=3.3&hardware=0.1&record=0.1&orbBasic=1.9&model=1&platform=android&accesscode=
+Master ping URL
+* Sphero: http://update.orbotix.com/sphero/current/versions.php?mac=6886E7061234&mainApp=3.73&overlayManager=0.6&bootloader=3.3&hardware=0.1&record=0.1&orbBasic=1.9&model=1&platform=android&accesscode=
+* BB-8: http://update.orbotix.com/model-30/current/versions.php?mac=DC:2D:00:6D:CA:55&mainApp=4.45&overlayManager=0.6&bootloader=4.8&hardware=0.1&record=0.1&orbBasic=0.0&model=30&platform=android&accesscode=
 
 The URL returns a redirect, so it should be retrieved with `curl -I`. The redirect points to a `versions.json` file, which has the path to the most recent version.
 
-### Models 0, 1, 2
+### Models 0, 2 (Sphero)
 
 * http://update.orbotix.com/sphero/current/versions.json
 * http://update.orbotix.com/sphero/current/sphero.bin
 
-### Model 3, 10, 30 and perhaps more
+### Model 3 (SPRX)
 
 http://update.orbotix.com/unstable/current/codes/2k/versions.json
 http://update.orbotix.com/unstable/current/codes/2k/SpheroM4Mix-3.59.bin
+
+### Model 30 (BB-8)
+
+http://update.orbotix.com/model-30/current/versions.json
+http://update.orbotix.com/model-30/current/Ray_Mix-4.55.bin
 
 ## Bootloader update protocol
 
