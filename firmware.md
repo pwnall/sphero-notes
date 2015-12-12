@@ -36,14 +36,14 @@ The bootloader has device ID 1.
 
 The parameters are hard-coded in the app, so they can't seem to change between models.
 
-| Model | Pages | First page in update |  Page size | Update size  |
-|---:|----:|---:|-----:|-------:|
-|  0 | 102 | 10 | 1024 | 104448 |
-|  1 | 116 |  8 | 2048 | 237568 |
-|  2 | 102 | 10 | 1024 | 104448 |
-|  3 |  54 |  6 | 2048 | 110592 |
-| 10 | 116 |  8 | 2048 | 237568 |
-| 30 | 116 |  8 | 2048 | 237568 |
+| Name | Model | Pages | First page in update |  Page size | Update size  |
+|---------------|---:|----:|---:|-----:|-------:|
+| Sphero 1.0 ?  |  0 | 102 | 10 | 1024 | 104448 |
+| Ollie proto?  |  1 | 116 |  8 | 2048 | 237568 |
+| Sphero 2.0    |  2 | 102 | 10 | 1024 | 104448 |
+| SPRK          |  3 |  54 |  6 | 2048 | 110592 |
+| Ollie         | 10 | 116 |  8 | 2048 | 237568 |
+| StarWars BB-8 | 30 | 116 |  8 | 2048 | 237568 |
 
 ### Jump to Bootloader
 
