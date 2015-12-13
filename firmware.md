@@ -94,3 +94,13 @@ Arguments:
 
 Response:
 - blank if byte 6 in response packet is not null
+
+### SOMETHING_ELSE?
+
+Command ID 6 seems to do something undocumented. Calling it with a 0-1 byte argument resulted in an "OK", followed by a "Burn SSB\nu>" prompt. Calling it with a 4-byte argument started the main app.
+
+### Other Commands
+
+The bootloader rejects commands 1 and 7, 8, 9. Command 254 did not result in a response, instead the robot wrote "u>".
+
+
