@@ -16,6 +16,20 @@ The URL returns a redirect, so it should be retrieved with `curl -I`. The redire
 http://update.orbotix.com/unstable/current/codes/2k/versions.json
 http://update.orbotix.com/unstable/current/codes/2k/SpheroM4Mix-3.59.bin
 
+```
+First valid page: 6
+Last valid page: 127
+Page map:
+XXXXXX**********
+****************
+**************.*
+************...*
+................
+................
+................
+................
+```
+
 ### Models 1, 10 (Ollie)
 
 * http://update.orbotix.com/ollie/current/versions.json
