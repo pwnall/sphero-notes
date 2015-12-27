@@ -1,15 +1,21 @@
-# Name Prefixes
+# Bluetooth LE Communication Protocol
+
+This is based on the decompiled Android Sphero app. The results
+here match
+[mcgrews3's previous work](https://github.com/mcgrews3/bb8-driver).
+
+## Name Prefixes
 
 * Ollie: `2B-`
 * BB8: `BB-`
 * WeBall: `1C-`
 
-# Services
+## Services
 
 * Radio: 22bb746f-2bb0-7554-2D6F-726568705327
 * Robot: 22bb746f-2ba0-7554-2d6f-726568705327
 
-## Radio Service Characteristics
+### Radio Service Characteristics
 
 * TX power: 22bb746f-2bb2-7554-2D6F-726568705327
 * RSSI: 22BB746F-2BB6-7554-2D6F-726568705327
@@ -18,7 +24,7 @@
 * Anti DOS timeout: 22bb746f-2bbe-7554-2D6F-726568705327
 * Wakeup: 22bb746f-2bbf-7554-2D6F-726568705327
 
-## Robot Service Characteristics
+### Robot Service Characteristics
 
 * Control: 22bb746F-2ba1-7554-2D6F-726568705327
 * Response: 22bb746F-2ba6-7554-2D6F-726568705327
@@ -43,7 +49,7 @@ In normal mode, 0x00 (0 seconds?) is written.
 While in the main app, an API command is used to put the robot in deep sleep.
 Outside the main app, "011i3" is written to the Deep sleep characteristic.
 
-### Normal Communication
+## Standard Communication
 
 The serial protocol used over Bluetooth RFCONN is tunnelled over the Control
 and Response attributes. Writes (of at most 20 bytes) go to Control. Change
