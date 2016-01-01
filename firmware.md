@@ -114,9 +114,11 @@ Arguments:
 Response:
 - blank if byte 6 in response packet is not null
 
-### SOMETHING_ELSE?
+### ERASE_USER_CONFIG
 
-Command ID 6 seems to do something undocumented. Calling it with a 0-1 byte argument resulted in an "OK", followed by a "Burn SSB\nu>" prompt. Calling it with a 4-byte argument started the main app.
+Command ID 6.
+
+This is not implemented in the Sphero Android app. Calling it with a 0-1 byte argument resulted in an "OK", followed by a "Burn SSB\nu>" prompt. Calling it with a 4-byte argument started the main app.
 
 ### Other Commands
 
